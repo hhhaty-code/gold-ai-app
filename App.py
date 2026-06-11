@@ -97,7 +97,7 @@ if st.button("🔄 執行當前黃金策略分析", type="primary"):
             # 呼叫新版 SDK 與升級版模型
             response = client.models.generate_content(
                 model='gemini-1.5-flash',
-                contents=promp
+                contents=prompt
             )
             
             st.subheader("🤖 AI 策略推薦結果")
